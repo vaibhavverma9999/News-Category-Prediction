@@ -1,5 +1,5 @@
 # News-Category-Prediction
-This model predicts news category. We will use the concepts of Machine Language. We compared the performance of two algorithms in correctly classifying the category of the news. We used Multinomial Naive Bayes and Logistic Regression. For Multinomial NB, we got accuracy of 93.86%. For Logistic Regression, we got accuracy of 94.01%. We split the dataset into 70% train dataset and 30% test dataset.
+This model predicts news category. We will use the concepts of Machine Learning. We compared the performance of two algorithms in correctly classifying the category of the news. We used Multinomial Naive Bayes and Logistic Regression. For Multinomial NB, we got accuracy of 93.86%. For Logistic Regression, we got accuracy of 94.01%. We split the dataset into 70% train dataset and 30% test dataset.
 
 Tools Used:
 1. Python
