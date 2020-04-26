@@ -1,10 +1,15 @@
 # News-Category-Prediction
+
+Frontend is implemented using FLASK API. Python scripts are called using HTML and Flask API.
+
+Inside Python Notebook:
 This model predicts news category. I will use the concepts of Machine Learning. I compared the performance of two algorithms in correctly classifying the category of the news. I used Multinomial Naive Bayes and Logistic Regression. For Multinomial NB, I got accuracy of 93.86%. For Logistic Regression, I got accuracy of 94.01%. I split the dataset into 70% train dataset and 30% test dataset.
 
 Tools Used:
 1. Python
 2. Numpy
 3. ScikitLearn libraries
+4. Flask API
 
 Method:
 1. Import the dataset into the python notebook.
