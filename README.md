@@ -1,5 +1,7 @@
 # News-Category-Prediction
 
+**Run the python notebook first to create pickle files
+
 Frontend is implemented using FLASK API. Python scripts are called using HTML and Flask API.
 
 Inside Python Notebook:
