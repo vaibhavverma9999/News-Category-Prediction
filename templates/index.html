@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ML API</title>
+    <meta charset="utf-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+</head>
+<style>
+    body
+    {
+        background-image: url({{ url_for('static', filename='img/bg3.jpg') }});
+        background-size: 100% 200%;
+        background-repeat: no-repeat;
+    }
+    .login
+    {
+    	margin-left: 5%;
+    	margin-top: 5%;
+    	font-size: 30px;
+    }
+    h1
+    {
+        text-shadow: 2px 1px #001f33;
+    }
+    #news
+    {
+        margin-left: 10%;
+        padding: 10px;
+        width: 40%;
+        border: 1px solid black;
+        border-radius: 7px;
+        font-size: 14px;
+        height: 100px;
+        box-sizing: border-box;
+        resize: none;
+    }
+    .button
+    {
+        margin-left: 25%;
+        margin-top: 2%;
+        margin-bottom: -2%;
+        width: 10%;
+        padding: 10px 10px 10px 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        background-color: #99ddff;
+    }
+    .predict
+    {
+        margin-left: 10%;
+        font-size: 25px;
+    }
+</style>
+<body>
+ <div class="login">
+	<h1>News Article Category Predictor</h1>
+     <!--<img src="{{ url_for('static', filename='images/bg1.jpg') }}", alt="">-->
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}" method="post">
+        <textarea id="news" type="textarea" name="news_article" placeholder="Enter your news article here..." autofocus="autofocus" required="required"></textarea>
+        <br>
+        <button type="submit" class="button" onclick="predict()">Predict</button>
+    </form>
+
+   <br>
+   <br>
+     <div class="predict">
+     Predicted Category Of News Article is
+   {{ prediction_text }}
+     </div>
+
+ </div>
+</body>
+</html>
